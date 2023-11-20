@@ -30,6 +30,9 @@ public class BlobTriggerJava2 {
         context.getLogger().info("Java Blob trigger function processed a blob. Name: " + name + "\n  Size: "
                 + content.length + " Bytes");
 
+
+        // ------ Can remove lines 32 - 56, 58 - 63 if only copying the blob, if actually copying and removing from source then the blobclient will be needed to interact with the original blob, to manipulate it, etc. 
+
         // Sets the storage account connection string
         String connectionString = System.getenv("blobtriggercurtistest_STORAGE");
 
